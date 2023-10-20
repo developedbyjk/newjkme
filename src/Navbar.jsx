@@ -7,11 +7,11 @@ export default function Navbar(){
                 <NavLink to="/about" >
                 About
                 </NavLink>
-                <NavLink to="/about" >
-                About
+                <NavLink to="/projects" >
+                Projects
                 </NavLink>
-                <NavLink to="/about" >
-                About
+                <NavLink to="/more" >
+                More
                 </NavLink>
 
          
