@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { data } from './projectdata'
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 export default function Home(){
@@ -77,9 +78,9 @@ console.log("render pojrec is" + renderProject)
                 
             </div>
             
-            <h1>Projects</h1>
+            <h1 id="center">Projects</h1>
             <div className="projects">
-           
+            
 
             {renderProject}
            
@@ -92,6 +93,30 @@ amazing blue shie luster with our new </div>
                 </div> */}
             </div>
 
+            <h1 id="center">Contact</h1>
+            <div className="contact">
+
+             
+                <div className="box">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/developedbyjk/">Instagram</a>
+                </div>
+                
+                <div className="box">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/developedbyjk">Github</a>
+                </div>
+               
+                <div className="box">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/juned-khan-dev/">Linkedin</a>
+                </div>
+                <div className="box">
+                <i class="fa-brands fa-x-twitter"></i>
+                <a href="http://twitter.com/developedbyjk">Twitter</a>
+                </div>
+
+            </div>
 
               
         </div>

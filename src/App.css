@@ -108,11 +108,12 @@
 .projects{
     font-family: 'Space Grotesk', sans-serif; 
     padding: 50px;
-    background-color: crimson;
+    /* background-color: crimson; */
     display: flex;
     gap:20px;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
 }
 .projects h1{
@@ -147,3 +148,32 @@
 .box button{
     margin:10px 0px
 }
+
+.box button a{
+    color:white;
+}
+
+#center{
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+
+/* STYLE WITH CONTACT */
+.contact{
+    font-family: 'Space Grotesk', sans-serif; 
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content:center;
+    margin: 50px 0px;
+
+}
+.contact h1{
+    text-align: center;
+}
+
+.contact .box  i {
+    /* background-color: yellow; */
+    padding: 0px 10px;
+}
+
