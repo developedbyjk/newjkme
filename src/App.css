@@ -14,10 +14,11 @@
     height: 80vh;
     flex-direction: column;
     border-bottom: 1px solid black;
+    
 }
 .hero h1{
     font-family: 'Space Grotesk', sans-serif;
-    text-align: center;
+    font-size: 3rem;
 }
 /* .hero button{
     background-color: black;

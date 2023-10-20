@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { data } from './projectdata'
+import About from './About';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -39,27 +40,27 @@ console.log("render pojrec is" + renderProject)
             </div>
 
 {/* THIS IS INTRO SECTION */}
+        <div className="intro">
 
-            <div className="intro">
+        <div className="pic">
+            <img src="https://i.postimg.cc/RZ4WxShv/myimg.jpg" alt="jkimg" />
+        </div>
 
-                <div className="pic">
-                    <img src="https://i.postimg.cc/RZ4WxShv/myimg.jpg" alt="jkimg" />
-                </div>
-
-                <div className="info">
-                    <h2>
-                        Hi! i am <br/>Junedkhan
-                    </h2>
-                    <p>
-                    Since  9 grade i was fascinated by  changing colors in html. Turn out that i love to develop cool stuff on web!  
-                    </p>
-                    <p>And here i am Messing around the physical 
-                        world with digital Code!
-                    </p>
-                    <button className='blackbtn'>Know more</button>
-                </div>
-                
+            <div className="info">
+                <h2>
+                    Hi! i am <br/>Junedkhan
+                </h2>
+                <p>
+                Since  9 grade i was fascinated by  changing colors in html. Turn out that i love to develop cool stuff on web!  
+                </p>
+                <p>And here i am Messing around the physical 
+                    world with digital Code!
+                </p>
+                <button className='blackbtn'>Know more</button>
             </div>
+
+        </div>
+
 
             <div className="skills">
                 <h1>Skills</h1>
@@ -84,13 +85,7 @@ console.log("render pojrec is" + renderProject)
 
             {renderProject}
            
-                {/* <div className="box">
-                    <div className="emoji">😒</div>
-                    <div className="name">Angry pill</div>
-                    <div className="desc">Turn your  Anger into
-amazing blue shie luster with our new </div>
-                    <button className='blackbtn'>Try now</button>
-                </div> */}
+
             </div>
 
             <h1 id="center">Contact</h1>
