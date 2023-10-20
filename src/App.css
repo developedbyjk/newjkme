@@ -1,5 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    height: 80vh;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+.hero h1{
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+.hero button{
+    background-color: black;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 90px;
+    font-family: 'Lexend Exa', sans-serif;
+
+}
+
+/* NAV BAR STYLE */
+.navbar{
+    /* background-color: crimson; */
+    border-bottom: 1px solid black;
+}
+.navbar .nav{
+    
+    
+}
+.logo{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar .nav .navlink{
+    /* background-color: green; */
+    padding: 0px 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+}
+
+/* INTRO SECITON STYLE */
+.intro{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.intro .pic img{
+    height: 350px;
+}
+
+.intro  .info{
+    font-family: 'Space Grotesk', sans-serif;
 }

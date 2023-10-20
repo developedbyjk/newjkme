@@ -15,19 +15,28 @@ export default function Navbar(){
             </div>
             <div className="nav">
              <NavLink 
+                className="navlink"
                 to="/"
                 style={({isActive})=> isActive ? activeStyle : null} >
                 Home
                 </NavLink>
                 <NavLink 
+                 className="navlink"
                 to="/about"
                 style={({isActive})=> isActive ? activeStyle : null} >
                 About
                 </NavLink>
-                <NavLink to="/projects" >
+                <NavLink 
+                to="/projects"
+                className="navlink"
+                style={({isActive})=> isActive ? activeStyle : null}
+                >
                 Projects
                 </NavLink>
-                <NavLink to="/more" >
+                <NavLink to="/more"
+                className="navlink"
+                style={({isActive})=> isActive ? activeStyle : null}  
+                   >
                 More
                 </NavLink>
 
