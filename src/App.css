@@ -19,7 +19,7 @@
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
 }
-.hero button{
+/* .hero button{
     background-color: black;
     padding: 15px 30px;
     border: none;
@@ -28,7 +28,7 @@
     border-radius: 90px;
     font-family: 'Lexend Exa', sans-serif;
 
-}
+} */
 
 /* NAV BAR STYLE */
 .navbar{
@@ -52,14 +52,98 @@
 
 /* INTRO SECITON STYLE */
 .intro{
+    margin:100px 0px;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
+    padding: 30px;
+    justify-content: center;
 }
 .intro .pic img{
-    height: 350px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .intro  .info{
     font-family: 'Space Grotesk', sans-serif;
+    max-width: 300px;
+    /* background-color: green; */
+}
+
+.intro button{
+
+}
+
+.blackbtn{
+    background-color: black;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 90px;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+/* TIME TO EDIT SKILLS SECTION */
+.skills h1{ 
+ text-align: center;
+ font-family: 'Space Grotesk', sans-serif; 
+}
+.skills{
+    margin:100px 0px;
+}
+.skills .pts {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    font-family: 'Space Grotesk', sans-serif; 
+    font-size: 1.5rem;
+
+}
+
+/* THIS STYLE IS FOR PROJECT SECTION */
+
+.projects{
+    font-family: 'Space Grotesk', sans-serif; 
+    padding: 50px;
+    background-color: crimson;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.projects h1{
+    text-align: center;
+}
+
+.box {
+    background-color: white;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.box .emoji{
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.box .name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+.box .desc{
+    padding: 10px 0px;
+}
+.box button{
+    margin:10px 0px
 }
