@@ -1,6 +1,7 @@
-import React from 'react'
-import Navbar from './Navbar'
-import { data } from './projectdata'
+import React from 'react';
+import Navbar from './Navbar';
+import { data } from './projectdata';
+import './App.css'; 
 
 export default function Projects(){
 
@@ -8,6 +9,7 @@ export default function Projects(){
     
 let renderProject = '';
 const mapoverproject = data.map((item,key)=>{
+    console.log("because " + item.name);
     return(
         <>
             <div className="box">
@@ -25,7 +27,15 @@ renderProject = mapoverproject;
     return(
         <>
         <Navbar/>
-        {renderProject}
+        <h1 id="center">Projects</h1>
+        <div className="projects">
+            
+
+            {renderProject}
+           
+
+            </div>
+       
         </>
 
     )
