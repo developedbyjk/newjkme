@@ -185,30 +185,54 @@
 .open{
     background-color: red;
 }
+.menu-icon{
+    display: none;
+}
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
     body {
       background-color: lightblue;
     }
 
     .navbar{
 
-       
+   
     }
     .navbar .nav{
-        /* margin-top:100%;
-        position: fixed;
-width: 100%;
-height: 100%;
-
-background-color: white;
-        display: none;      
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #fef7e5;
+        width: 0px;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
-        gap:20px; */
+        padding: 20px 0px;
+        gap:30px;
+        text-align: center;
 
     }
+
+    .nav.active {
+        width: 270px;
+      }
+    
+      .nav ul {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .nav{
+        margin-right: unset;
+        margin-top:auto;
+      }
     #wave{
         display: inline;
     }

@@ -1,33 +1,47 @@
 import React from 'react'
 import {  NavLink } from 'react-router-dom/dist'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
+
 export default function Navbar(){
 
-    const [open,SetOpen] = React.useState(false)
+    // const [open,SetOpen] = React.useState(false)
 
     const activeStyle={
-        color : 'green',
+        color : 'red',
+        backgroundColor:'yellow'
       
     }
 
-    const toggleNavbar = () => {
-        SetOpen(!open);
-      };
+    const [showNavbar, setShowNavbar] = React.useState(false)
+
+    const handleShowNavbar = () => {
+      setShowNavbar(!showNavbar)
+    }
+
     const style = {
         // display:open ? "block" : "none"
     }
 
-    const navClass = open ? 'navbar open' : 'navbar';
+    // const navClass = open ? 'navbar open' : 'navbar';
 
     return(
 
-        <div className={navClass}>
+        // <div className={navClass}>
+        <div className='navbar'>
 
 
             <div className="logo">
                 <h3>@developedbyjk</h3>
             </div>
+            
+        <div className="menu-icon" onClick={handleShowNavbar}>
+        <FontAwesomeIcon icon={showNavbar ? faXmark  : faBars} />
+        </div>
 
-            <div className="nav " style={style}>
+
+            {/* <div className="nav " style={style}> */}
+            <div className={`nav  ${showNavbar && 'active'}`}>
              <NavLink 
                 className="navlink"
                 to="/"
@@ -54,12 +68,12 @@ export default function Navbar(){
                 More
                 </NavLink>
 
-                <button onClick={()=>SetOpen(prev=>!prev)}>X</button>
+                {/* <button onClick={()=>SetOpen(prev=>!prev)}>X</button> */}
 
              </div>
 
             {/* <button id="wave" onClick={()=>SetOpen(prev=>!prev) }> 👋</button> */}
-            <button id='wave' onClick={toggleNavbar}>👋</button>
+            {/* <button id='wave' onClick={toggleNavbar}>👋</button> */}
               
         </div>
   
