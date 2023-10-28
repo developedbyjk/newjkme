@@ -8,8 +8,11 @@ export default function Navbar(){
     // const [open,SetOpen] = React.useState(false)
 
     const activeStyle={
-        color : 'red',
-        backgroundColor:'yellow'
+        color : 'aliceblue',
+        backgroundColor:'black',
+        borderRadius : '5px',
+        padding:'10px',
+        textDecoration : 'none'
       
     }
 
@@ -19,11 +22,7 @@ export default function Navbar(){
       setShowNavbar(!showNavbar)
     }
 
-    const style = {
-        // display:open ? "block" : "none"
-    }
 
-    // const navClass = open ? 'navbar open' : 'navbar';
 
     return(
 
