@@ -4,21 +4,27 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    z-index: 9;
+    width: 100%;
 }
 
-.hero{
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
-    height: 80vh;
+    
+    /* background-color: yellow; */
+    height: 100vh;
     flex-direction: column;
     border-bottom: 1px solid black;
     
 }
-.hero h1{
+.home h1{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 3rem;
+   
 }
 /* .hero button{
     background-color: black;
@@ -52,15 +58,27 @@
     color: black;
 }
 
+
 /* INTRO SECITON STYLE */
 .intro{
-    margin:100px 0px;
+   position: relative;
     display: flex;
     gap: 50px;
     align-items: center;
     padding: 30px;
     justify-content: center;
+    /* background-color: green; */
+    border-top:  1px solid black;
+    border-bottom:  1px solid black;
 }
+.line-up{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 0.7px ;
+
+}
+
 .intro .pic img{
     height: 300px;
     border-radius: 10px;
@@ -69,6 +87,9 @@
 .intro  .info{
     font-family: 'Space Grotesk', sans-serif;
     max-width: 300px;
+ 
+    padding-left: 40px;
+    height: 100%;
     /* background-color: green; */
 }
 
@@ -94,16 +115,48 @@
 .skills{
     margin:100px 0px;
 }
-.skills .pts {
-
+.skills {
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:50px;
+    flex-wrap: wrap;
     font-family: 'Space Grotesk', sans-serif; 
     font-size: 1.5rem;
+    gap: 10px;
 
 }
+
+ .box{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+.box h1,p{
+    margin: 0;
+    text-align: center;
+}
+
+.skills .box{
+
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    outline: none;
+    width: 90%;
+   
+}
+table td{
+    border-left:1px solid black;
+    border-bottom: 1px solid black;
+    padding: 12px;
+    border-radius: 5px;
+    width: 50%;
+}
+
 
 /* THIS STYLE IS FOR PROJECT SECTION */
 
@@ -122,15 +175,16 @@
     text-align: center;
 }
 
-.box {
+.projectbox {
     background-color: white;
     width: 200px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid black;
     padding: 20px;
+   
 }
-.box .emoji{
+.projectbox .emoji{
     text-align: center;
     font-size: 3rem;
     border-bottom: 1px solid black;
@@ -138,20 +192,20 @@
     background-color: whitesmoke;
     border-radius: 10px;
 }
-.box .name{
+.projectbox .name{
     font-weight: bold;
     font-size: 1.5rem;
     padding: 10px 0px;
     margin-top: 10px;
 }
-.box .desc{
+.projectbox .desc{
     padding: 10px 0px;
 }
-.box button{
+.projectbox button{
     margin:10px 0px
 }
 
-.box button a{
+.projectbox button a{
     color:white;
 }
 
@@ -196,7 +250,7 @@
         cursor: pointer;
     }
     body {
-      background-color: lightblue;
+      background-color: white;
     }
 
     .navbar{
@@ -236,4 +290,20 @@
     #wave{
         display: inline;
     }
+
+    .intro{
+        flex-direction: column;
+       
+    }
+    .info h1{
+        text-align: center;
+    }
+    .line-up{
+     display: none;
+    }
+    .home h1{
+        text-align: center;
+    }
+    
+
   }

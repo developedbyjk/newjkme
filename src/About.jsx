@@ -1,15 +1,17 @@
 import React from 'react'
-import Navbar from './Navbar'
+
 export default function About(){
     return(
         <>        
-        <Navbar/>
-        <div className="intro">
+       <h1 id="center">About</h1>
+        <div className="intro" id="about">
 
         <div className="pic">
             <img src="https://i.postimg.cc/RZ4WxShv/myimg.jpg" alt="jkimg" />
         </div>
-
+        <div className="line-up">
+            
+        </div>
             <div className="info">
                 <h2>
                     Hi! i am <br/>Junedkhan
@@ -20,7 +22,7 @@ export default function About(){
                 <p>And here i am Messing around the physical 
                     world with digital Code!
                 </p>
-                <button className='blackbtn'>Know more</button>
+                {/* <button className='blackbtn'>Know more</button> */}
             </div>
 
        </div>

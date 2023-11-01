@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+
 import { data } from './projectdata';
 import './App.css'; 
 
@@ -12,7 +12,7 @@ const mapoverproject = data.map((item,key)=>{
     console.log("because " + item.name);
     return(
         <>
-            <div className="box">
+            <div className="projectbox">
                     <div className="emoji">{item.emoji}</div>
                     <div className="name">{item.name}</div>
                     <div className="desc">{item.desc} </div>
@@ -26,9 +26,9 @@ renderProject = mapoverproject;
 
     return(
         <>
-        <Navbar/>
+     
         <h1 id="center">Projects</h1>
-        <div className="projects">
+        <div className="projects" id="projects">
             
 
             {renderProject}
