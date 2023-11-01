@@ -1,20 +1,13 @@
 import React from 'react'
-import {  NavLink } from 'react-router-dom/dist'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 export default function Navbar(){
 
     // const [open,SetOpen] = React.useState(false)
 
-    const activeStyle={
-        color : 'aliceblue',
-        backgroundColor:'black',
-        borderRadius : '5px',
-        padding:'10px',
-        textDecoration : 'none'
-      
-    }
+
 
     const [showNavbar, setShowNavbar] = React.useState(false)
 
@@ -41,38 +34,17 @@ export default function Navbar(){
 
             {/* <div className="nav " style={style}> */}
             <div className={`nav  ${showNavbar && 'active'}`}>
-             <NavLink 
-                className="navlink"
-                to="/"
-                style={({isActive})=> isActive ? activeStyle : null} >
-                Home
-                </NavLink> 
-                <NavLink 
-                 className="navlink"
-                to="/about"
-                style={({isActive})=> isActive ? activeStyle : null} >
-                About
-                </NavLink>
-                <NavLink 
-                to="/projects"
-                className="navlink"
-                style={({isActive})=> isActive ? activeStyle : null}
-                >
-                Projects
-                </NavLink>
-                <NavLink to="/more"
-                className="navlink"
-                style={({isActive})=> isActive ? activeStyle : null}  
-                   >
-                More
-                </NavLink>
 
-                {/* <button onClick={()=>SetOpen(prev=>!prev)}>X</button> */}
+        <a href="#home" className="navlink">Home</a>
+      <a className="navlink" href="#about">About</a>
+      <a  className="navlink" href="#skills">Skills</a>
+      <a  className="navlink" href="#projects">Projects</a>
+      <a  className="navlink" href="#contact">Contact</a>
+
 
              </div>
 
-            {/* <button id="wave" onClick={()=>SetOpen(prev=>!prev) }> 👋</button> */}
-            {/* <button id='wave' onClick={toggleNavbar}>👋</button> */}
+
               
         </div>
   
