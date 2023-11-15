@@ -24,7 +24,7 @@ export default function Home(){
                         <span id="awesome">
                         Awesome 
                          </span>✨
-                          things on Web 🌎
+                          things on <br/>Web 🌎
                     </p>
 
                 </div>
