@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;600&display=swap');
 
 .navbar{
     display: flex;
@@ -11,20 +11,46 @@
 }
 
 .home{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     
     /* background-color: yellow; */
-    height: 100vh;
-    flex-direction: column;
+      
     border-bottom: 1px solid black;
+    gap:5%;
+    padding: 100px 50px;
+
     
 }
-.home h1{
+.home p{
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 3rem;
+    text-align: left;
+    font-size: 2rem;
    
+   
+}
+.home img{
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.pic {
+    border-radius: 10px;
+    margin: 0;;
+    
+}
+#awesome{
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    padding: 0px  5px;
+    font-family: 'Playfair Display', serif;
 }
 /* .hero button{
     background-color: black;
@@ -232,6 +258,15 @@ table td{
     /* background-color: yellow; */
     padding: 0px 10px;
 }
+
+.contact .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 #wave{
     display: none;
 }
@@ -301,9 +336,19 @@ table td{
     .line-up{
      display: none;
     }
-    .home h1{
-        text-align: center;
-    }
+.home{
+   
+    flex-direction: column-reverse;
+}
+.info {
+  padding: 50px 10px;
+}
+.pic img {
+    height: 230px;
+}
+.info p, #awesome{
+    font-size: 1.2rem;
+}
     
 
   }
